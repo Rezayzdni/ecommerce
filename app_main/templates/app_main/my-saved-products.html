@@ -1,0 +1,50 @@
+{% extends "app_main/customer-profile.html" %}
+    {% block profile_content  %}
+        <div class="row">
+          <div class="col s12 m4">
+              <div class="card">
+                    <div class="card-image">
+                      <img src="{% static 'pics/background1.jpg' %}">
+                      <span class="card-title">پاپ</span>
+                    </div>
+                    <div class="card-content">
+                      <p>که در اصل به معنی موسیقی عامه‌پسند (popular) می‌باشد) یک سبک از موسیقی عامه‌پسند است.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">پربازدید ترین ها</a>
+                    </div>
+              </div>
+          </div>
+
+        <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'pics/background2.jpg' %}">
+                  <span class="card-title">راک</span>
+                </div>
+                <div class="card-content">
+                  <p>گونه‌ای موسیقی عامه‌پسند است که در دهه ۵۰ میلادی تحت عنوان راک اند رول شکل گرفت و در دهه ۶۰.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">پربازدید ترین ها</a>
+                </div>
+              </div>
+            </div>
+
+
+        <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'pics/background3.jpg' %}">
+                  <span class="card-title">هیپ هاپ</span>
+                </div>
+                <div class="card-content">
+                  <p>یکی از زیر سبک‌های موسیقی است که به‌طور موازی با فرهنگ هیپ‌هاپ رشد کرده‌است.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">پربازدید ترین ها</a>
+                </div>
+              </div>
+            </div>
+      </div>
+    {% endblock profile_content %}

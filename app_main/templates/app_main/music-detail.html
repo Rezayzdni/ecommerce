@@ -1,0 +1,79 @@
+{% extends "app_main/base.html" %}
+
+
+{% block content  %}
+<div class="container">
+    <div class="section">
+                <h2>آلبوم تونل</h2>
+             <div class="card-panel">
+
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</div>
+                <h3>جزئیات آلبوم</h3>
+            <div class="card-panel">
+
+                <ol>
+                    <li >one</li>
+                    <li >two</li>
+                    <li >three</li>
+                </ol>
+            </div>
+
+        <a class="btn" href="{% url 'music_detail_detail' %}">شرکت در دوره</a>
+    </div>
+</div>
+
+<div class="container">
+        <div class="section">
+              <h4>آهنگ های پیشنهادی</h4>
+              <!--   Icon Section   -->
+              <!-- first row --->
+              <div class="row">
+                  <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="{% static 'pics/background1.jpg' %}">
+                              <span class="card-title">پاپ</span>
+                            </div>
+                            <div class="card-content">
+                              <p>که در اصل به معنی موسیقی عامه‌پسند (popular) می‌باشد) یک سبک از موسیقی عامه‌پسند است. و معمولاً در مقابل موسیقی کلاسیک و فولک (محلی) قرار می‌گیرد و از آن‌ها متمایز است.</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">پربازدید ترین ها</a>
+                            </div>
+                        </div>
+                  </div>
+
+                  <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="{% static 'pics/background2.jpg' %}">
+                              <span class="card-title">پاپ</span>
+                            </div>
+                            <div class="card-content">
+                              <p>که در اصل به معنی موسیقی عامه‌پسند (popular) می‌باشد) یک سبک از موسیقی عامه‌پسند است. و معمولاً در مقابل موسیقی کلاسیک و فولک (محلی) قرار می‌گیرد و از آن‌ها متمایز است.</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">پربازدید ترین ها</a>
+                            </div>
+                        </div>
+                  </div>
+
+                  <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="{% static 'pics/background3.jpg' %}">
+                              <span class="card-title">پاپ</span>
+                            </div>
+                            <div class="card-content">
+                              <p>که در اصل به معنی موسیقی عامه‌پسند (popular) می‌باشد) یک سبک از موسیقی عامه‌پسند است. و معمولاً در مقابل موسیقی کلاسیک و فولک (محلی) قرار می‌گیرد و از آن‌ها متمایز است.</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">پربازدید ترین ها</a>
+                            </div>
+                        </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+{% endblock content %}

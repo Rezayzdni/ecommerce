@@ -1,0 +1,18 @@
+{% extends "app_main/base.html" %}
+{% block content  %}
+
+    <div class="container">
+       <div class="section">
+           <h3>شما از حساب خود خارج شدید</h3>
+            <div >
+                <small>
+                    <a href="{% url 'app_user:user-login' %}" >
+                         Log In Again
+                     </a>
+                </small>
+            </div>
+       </div>
+    </div>
+
+{% endblock content %}
+

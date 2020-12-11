@@ -1,0 +1,31 @@
+{% extends "app_main/customer-profile.html" %}
+    {% block profile_content  %}
+        <h2>پروفایل من</h2>
+
+    <div class="row">
+      <form class="col s12 m12" method="GET">
+              <div class="row">
+                <div class="col s6 m6 input-field inline textarea-label">
+                  <input id="name_inline" type="text" class="validate">
+                  <label class="active" for="name_inline">نام</label>
+                </div>
+                <div class="col s6 m6 input-field inline textarea-label">
+                  <input id="family_inline" type="text" class="validate">
+                  <label class="active" for="family_inline">نام خانوادگی</label>
+                </div>
+              </div>
+
+              <div class="row">
+                 <div class="col s6 m6 input-field inline textarea-label">
+                  <input id="phonenumber_inline" type="tel" pattern="[0-9]{11}" class="validate">
+                  <label class="active" for="phonenumber_inline">شماره همراه</label>
+                </div>
+                <div class="col s6 m6 input-field inline textarea-label">
+                  <input id="username_inline" type="text" class="validate">
+                  <label class="active" for="username_inline">نام کاربری</label>
+                </div>
+              </div>
+
+      </form>
+    </div>
+    {% endblock profile_content %}

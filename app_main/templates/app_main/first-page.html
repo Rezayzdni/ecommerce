@@ -1,0 +1,131 @@
+{% extends "app_main/base.html" %}
+{% load static %}
+{% block content  %}
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h1 class="header center teal-text text-lighten-2">گِران موبایل نخرید!</h1>
+            <div class="col center s12 m12">
+
+            <!-- search box -->
+                        <form method="GET">
+                                <input type="text" name="search" placeholder="جستجوی موبایل">
+                                <button type="submit" class="btn notif-button">جستجو</button>
+                        </form>
+
+            <!-- end search box -->
+
+            </div>
+            <br><br>
+
+        </div>
+        </div>
+        <div class="parallax"><img src="{% static 'pics/background1.jpg' %}" alt="Unsplashed background img 1"></div>
+    </div>
+
+
+ <div class="container">
+    <div class="section">
+      <h3>محصولات</h3>
+      <!--   Icon Section   -->
+      <!-- first row --->
+      
+
+
+      {% for obj in products %}
+        {% include "app_main/product.html" %}
+     {% endfor %}
+      <!-- end first row --->
+
+      <!-- second row --->
+     
+        <!-- end second row --->
+      <a href="#" class="more-types"><span><b>سبک های بیشتر</b></span></a>
+
+
+    </div>
+  </div>
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section">
+      <div class="container">
+        <div class="row center notifier">
+            <form class="col s12 m6" method="GET">
+              <div class="col s12 m6 input-field inline textarea-label">
+                <input id="email_inline" type="email" class="validate">
+                <label class="active" for="email_inline">ایمیل</label>
+                <button type="submit" class="btn notif-button">ثبت</button>
+              </div>
+            </form>
+          <div class="col s12 m6 center">
+              <h3 >عضویت  در نوتیفایر</h3>
+            <h5 > با عضویت در نوتیفایر آهنگ های برتر برای شما ارسال میشود!</h5>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'pics/background2.jpg' %}" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h3>خواننده های پرمخاطب</h3>
+      <div class="row">
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'pics/background1.jpg' %}">
+                  <a class="btn-floating halfway-fab waves-effect waves-light white circular-avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjmeBzQ7-ESQGGZM_FESDWKlhpJ7OCMEx99Q&usqp=CAU"></a>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="{% static 'pics/background1.jpg' %}">
+                      <a class="btn-floating halfway-fab waves-effect waves-light white circular-avatar"><img src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"></a>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col s12 m4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="{% static 'pics/background1.jpg' %}">
+                      <a class="btn-floating halfway-fab waves-effect waves-light white circular-avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTU53EcOIyxE7pOZJBvGHJGbDk39EYxvOhbdw&usqp=CAU"></a>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+                </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">آینده ازآن ماست..</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'pics/background3.jpg' %}" alt="Unsplashed background img 3"></div>
+  </div>
+{% endblock content %}

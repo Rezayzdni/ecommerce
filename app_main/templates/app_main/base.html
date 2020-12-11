@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="{% static 'css/simplemde.min.css' %}">
+
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container" >
+      <a id="logo-container" href="#" class="brand-logo" ><i class="material-icons">phone_android</i>رِز موبایل</a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{% url 'customer_profile' %}">انتقادات و پیشنهادات</a></li>
+        <li><a href="{% url 'music_detail' %}">تماس با ما</a></li>
+        <li><a href="{% url 'music_detail' %}">موبایلات</a></li>
+        <li><a href="{% url 'home' %}">خانه</a></li>
+        {% if user.is_authenticated %}
+         <!-- <li><span style="color:teal;">خوش آمدید {{request.user}}</span></li> -->
+          <li><a href="{% url 'customer_profile' %}">پروفایل من</a></li>
+          <li><a href="{% url 'app_user:user-logout' %}"> خروج   </li>
+        {% else %}
+          <li>
+            <a  href="{% url 'app_user:user-login' %}">ورود | ثبت نام</a>
+          </li>
+        {% endif %}
+
+      </ul>
+
+
+
+
+      <ul id="nav-mobile" class="sidenav">
+        {% if user.is_authenticated %}
+          <li><a href="{% url 'customer_profile' %}">پروفایل من</a></li>
+        {% else %}
+          <li>
+            <a  href="#">ورود | ثبت نام</a>
+          </li>
+        {% endif %}
+        <li><a href="{% url 'home' %}">خانه</a></li>
+        <li><a href="{% url 'music_detail' %}">تماس با ما</a></li>
+        <li><a href="{% url 'music_detail' %}">موبایلات</a></li>
+        <li><a href="{% url 'customer_profile' %}">انتقادات و پیشنهادات</a></li>
+        <li><a href="{% url 'customer_profile' %}">پروفایل</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+    {% if messages %}
+         {% for message in messages %}
+              <script src="{% static 'js/materialize.min.js' %}"></script>
+              <script type=text/javascript>M.toast({html: "{{message}}",classes: 'green rounded'});</script>
+         {% endfor %}
+    {% endif %}
+  {% block content %}{% endblock content%}
+
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">درباره سایت</h5>
+          <p class="grey-text text-lighten-4">گوگل (به انگلیسی: Google) یک شرکت آمریکایی فعال در حوزهٔ فناوری اطلاعات شامل جستجوی اینترنتی، رایانش ابری و تبلیغات، نرم‌افزار و سخت‌افزار است. این شرکت توسط لری پیج و سرگئی برین تأسیس شد که هر دوی آن‌ها در دانشگاه استنفورد به عنوان دانشجوی دکترا حضور داشتند.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">مطالب سایت</h5>
+          <ul>
+            <li><a class="white-text" href="#!">مطلب 1</a></li>
+            <li><a class="white-text" href="#!">مطلب 2</a></li>
+            <li><a class="white-text" href="#!">مطلب 3</a></li>
+            <li><a class="white-text" href="#!">مطلب 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">لینک های مفید</h5>
+          <ul>
+            <li><a class="white-text" href="#!">لینک 1</a></li>
+            <li><a class="white-text" href="#!">لینک 2</a></li>
+            <li><a class="white-text" href="#!">لینک 3</a></li>
+            <li><a class="white-text" href="#!">لینک 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+       <i class="pointing-arrow">رِز  </i><a class="yellow-text text-lighten-3" href="#!">طراحی</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'js/materialize.js' %}"></script>
+  <script src="{% static 'js/init.js' %}"></script>
+
+
+  </body>
+</html>

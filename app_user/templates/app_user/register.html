@@ -1,0 +1,31 @@
+{% extends "app_main/base.html" %}
+{% block content  %}
+    <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col m6 offset-m3">
+                        <div class="card-panel">
+                            <h4 class="center">همین امروز عضو شوید!</h4>
+                                <form method="POST">
+                                    {% csrf_token %}
+                                    {{ ur_form.as_p}}
+                                    <div class="center">
+                                        <button class="btn waves-effect" type="submit" style="width:100%;">
+                                            ثبت نام
+                                        </button>
+                                    </div>
+                                </form>
+                            <div class="small-in-login">
+                                <small>
+                                   حساب کاربری از قبل دارم!
+                                    <a href="{% url 'app_user:user-login' %}">
+                                         ورود
+                                     </a>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+    </div>
+{% endblock content %}

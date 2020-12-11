@@ -1,0 +1,383 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+@font-face {
+    font-family: 'IRANYekanWeb(Light)';
+    src: url('./fonts/IRANYekanWebFaNum-Light.eot');
+    src: url('./fonts/IRANYekanWebFaNum-Light.eot?#iefix') format('embedded-opentype'), url('./fonts/IRANYekanWebFaNum-Light.woff2') format('woff2'), url('./fonts/IRANYekanWebFaNum-Light.woff') format('woff'), url('./fonts/IRANYekanWebFaNum-Light.ttf') format('truetype'), url('./fonts/IRANYekanWebFaNum-Light.svg#IRANYekanWebFaNum-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANYekanWeb(FaNum)';
+    src: url('./fonts/IRANYekanWebFaNum.eot');
+    src: url('./fonts/IRANYekanWebFaNum.eot?#iefix') format('embedded-opentype'), url('./fonts/IRANYekanWebFaNum.woff2') format('woff2'), url('./fonts/IRANYekanWebFaNum.woff') format('woff'), url('./fonts/IRANYekanWebFaNum.ttf') format('truetype'), url('./fonts/IRANYekanWebFaNum.svg#IRANYekanWebFaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANYekanWeb(Bold)';
+    src: url('./fonts/IRANYekanWebFaNum-Bold.eot');
+    src: url('./fonts/IRANYekanWebFaNum-Bold.eot?#iefix') format('embedded-opentype'), url('./fonts/IRANYekanWebFaNum-Bold.woff2') format('woff2'), url('./fonts/IRANYekanWebFaNum-Bold.woff') format('woff'), url('./fonts/IRANYekanWebFaNum-Bold.ttf') format('truetype'), url('./fonts/IRANYekanWebFaNum-Bold.svg#IRANYekanWebFaNum-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'iransans';
+    src: url('../fonts/iransans.ttf');
+}
+
+body,p,nav,h1,h2,h3,h4,h5,h6,span,div,i,footer,button,input{
+    font-family: 'iransans';
+}
+
+
+
+p,h1,h2,h3,h4,h5,h6,span,div,i,footer{
+    direction: rtl;
+}
+
+.white-link{
+    color:white;
+}
+
+.img-frame{
+    width:60px;
+    height:auto;
+    border:solid 2px grey;
+    border-radius:50%;
+
+}
+.more-types:after , .solve-exercise:after{
+    font-family: 'Material Icons';
+    content: 'keyboard_arrow_left';
+    font-size: 24px;
+    position:relative;
+    top:10px;
+}
+
+.attachment-files:after{
+    font-family: 'Material Icons';
+    content: 'insert_drive_file';
+    font-size: 26px;
+    position:relative;
+    top: 7px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*
+#rcorners3 {
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+*/
+.card-panel div small a:hover {
+   text-decoration: underline;
+}
+
+.small-in-login{
+    margin-top:10px;
+}
+/* search box */
+
+.sidenav li > a{
+    padding: 0 8px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color:black;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+ol li {
+    list-style-type: circle;
+}
+.thin-card{
+    padding:10px 0px 2px 4px;
+}
+
+.rep-icon{
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  font-size:100px;
+  width: 98%;
+  height: auto;
+  color:teal;
+}
+
+
+.custom-textarea {
+  direction:ltr;
+  width:100%;
+  height: 150px;
+  padding: 12px 20px;
+}
+
+.CodeMirror *{
+    direction:rtl;
+}
+
+.CodeMirror-scroll  {
+    overflow:hidden !important;
+    margin-right:10px !important;
+}
+
+.m-t-5{
+    margin-top:5px;
+}
+
+.m-t-10{
+    margin-top:10px;
+}
+.m{
+    margin:10px;
+}
+.m-l{
+    margin-left:10px;
+}
+.m-r{
+    margin-right:10px;
+}
+.notifier{
+    color:white;
+}
+.pointing-arrow:after {
+    font-family: 'Material Icons';
+    content: 'play_arrow';
+    font-size: 24px;
+    position: relative;
+    top: 10px;
+}
+/* textarea label */
+.input-field.col.textarea-label label {
+    left:-0.65rem;
+}
+.input-field.textarea-label > label:not(.label-icon).active{
+    transform: translateX(-2px);
+    -webkit-transform: translateX(-2px);
+    transform: translateY(-14px);
+    -webkit-transform: translateY(-14px);
+}
+.input-field.profile-detail-inputs.col label{
+    left:-0.75rem;
+}
+/* comment label */
+.input-field.col.comment-label label {
+    left:0.65rem;
+    transform: translateY(16px);
+    -webkit-transform: translateY(16px);
+}
+.input-field.comment-label > label:not(.label-icon).active{
+    transform: translateX(-2px);
+    -webkit-transform: translateX(-2px);
+
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+
+}
+
+.notif-button{
+    width:50%;
+}
+
+header, main{
+      padding-right:300px;
+    }
+
+@media only screen and (max-width : 992px) {
+  header, main{
+    padding-right:0px;
+  }
+}
+
+
+/*
+.center-before-next {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  text-align:center;
+}*/
+
+
+.circular-avatar{
+    border-radius:50%;
+}
+.icons-div{
+    margin-top:28px;
+
+}
+.icons-style i{
+    padding:6px;
+    cursor:pointer;
+    border-radius:5px;
+
+}
+#red-fav{
+    color:red;
+    this is good but not enough
+}
+
+
+.reg-log{
+    position:absolute;
+    margin-left:20%;
+    margin-top:1.3%;
+    color:#white;
+    font-size: 24px;
+}
+
+.icon-action i{
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 992px) {
+
+ .reg-log{
+    display:none;
+ }
+
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #00897B;
+}
+
+nav .brand-logo i {
+  position: absolute;
+  left:-22px;
+}
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 15%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+}
+
+@media only screen and (max-width : 600px) , (max-width : 740px){
+  #index-banner .section {
+    top: 0;
+  }
+
+  .absolute-div{
+    position:relative;
+    margin-right:-14px;
+    }
+  .rep-icon{
+    font-size:40px;
+  }
+}
+
+
+
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/*
+alert messages
+*/
+
+.msg{
+  width:100%;
+  border: 1px solid;
+  color: white;
+}
+
+.msg-success {
+  border-color: green lighten-1;
+  background-color: green lighten-1;
+  color: white;
+}
+.msg-error {
+  border-color: #d32f2f;
+  background-color: #ef5350;
+  color: white;
+}
+.msg-alert {
+
+   border-color: #ef6c00;
+  background-color: #ff9800;
+  color: white;
+}
+
+.msg-info{
+  border-color: #0288d1;
+  background-color: #29b6f6;
+  color: white;
+}
+
+
+
+
+
+
+
+

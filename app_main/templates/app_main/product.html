@@ -1,0 +1,18 @@
+{% load static %}
+
+<div class="row">
+    <div class="col s12 m4">
+        <div class="card">
+              <div class="card-image">
+                <img src="{% static 'pics/background1.jpg' %}">
+                <span class="card-title">{{obj.brand}} {{obj.name}}</span>
+              </div>
+              <div class="card-content">
+                <p>{{obj.description}}</p>
+              </div>
+              <div class="card-action">
+                <a href="#">پربازدید ترین ها</a>
+              </div>
+        </div>
+    </div>
+</div>
